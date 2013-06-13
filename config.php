@@ -57,6 +57,8 @@ $THEME->sheets = array(
     'pagelayout',
     'core',
     'settings',
+	'js-image-slider',
+	'style',
 );
 
 ////////////////////////////////////////////////////
@@ -197,6 +199,7 @@ $THEME->csspostprocess = 'fuji_process_css';
 
 // $THEME->javascripts
 
+$THEME->javascripts = Array('js-image-slider');
 ////////////////////////////////////////////////////
 // An array containing the names of JavaScript files
 // located in /javascript/ to include in the theme.

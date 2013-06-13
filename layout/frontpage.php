@@ -38,7 +38,8 @@ echo $OUTPUT->doctype() ?>
 </head>
 
 <body id="<?php p($PAGE->bodyid) ?>" class="<?php p($PAGE->bodyclasses.' '.join(' ', $bodyclasses)) ?>">
-<?php echo $OUTPUT->standard_top_of_body_html() ?>
+<?php echo $OUTPUT->standard_top_of_body_html();?>
+
 
 <?php if ($hascustommenu) { ?>
 <div id="custommenu"><?php echo $custommenu; ?></div>
@@ -50,27 +51,50 @@ echo $OUTPUT->doctype() ?>
 
 <!-- START OF HEADER -->
 
-        <div id="page-header">
+        <div id="page-header" >
             <div id="page-header-wrapper" class="wrapper clearfix">
 
-                <div id="header-left">
-                    <?php if (!empty($PAGE->theme->settings->logo)) { ?>
-                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>" alt="Logo" /></a>
-                    <?php } else { ?>
-                        <h1 class="headermain"><a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a></h1>
-                        <div class="tagline"><?php echo $tagline; ?></div>
-                    <?php } ?>
+                <div id="header-left" class="header">
+	                <div class="leftElement">
+	                    <?php if (!empty($PAGE->theme->settings->logo)) { ?>
+	                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>" alt="Logo" /></a>
+	                    <?php } else { ?>
+	                        <h1 class="headermain"><a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a></h1>
+	                        <div class="tagline"><?php echo $tagline; ?></div>
+	                    <?php } ?>
+	                  </div>
+				        <div class="loginForm">
+			            	<div class="leftElement">
+			                		<label>User</label><br />
+			                		<input type="text" /><br />
+			            		<label>Password</label><br />
+			                	<input type="text" />
+			                </div>
+			                <div class="rightElement">
+			                	<input type="submit" value=""/>
+			                </div>
+			            </div>
                 </div>
-                <div class="headermenu">
+                <div class="headermenu clearWidth nav">
                     <?php
                         echo $OUTPUT->login_info();
                         echo $OUTPUT->lang_menu();
                         echo $PAGE->headingmenu;
                     ?>
                 </div>
-            </div>
-        </div>
 
+            </div>
+                            <!--  Slidder -->
+			   <div id="sliderFrame">
+					<div id="slider">
+			            <img src="<?php echo $OUTPUT->pix_url('img01','theme'); ?>" />
+			            <img src="<?php echo $OUTPUT->pix_url('image-slider-2','theme'); ?>" alt="" />
+			            <img src="<?php echo $OUTPUT->pix_url('image-slider-3','theme'); ?>" alt="" />
+			            <img src="<?php echo $OUTPUT->pix_url('image-slider-4','theme'); ?>" alt="" />
+			          </div>
+				</div>
+        </div>
+		
 <!-- END OF HEADER -->
 
 <!-- START OF CONTENT -->
