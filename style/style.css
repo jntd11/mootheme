@@ -60,3 +60,4 @@ ul.sf-menu li.active              	{ 	background: #b81e25; font-weight: bold; fl
 .sf-menu ul ul li:hover 			{	background: #b81e25; border-radius: 0; }
 .sf-menu li:hover,
 .sf-menu li.sfHover 				{	background: url(fuji/pix/menuhoverb.png) repeat-x; color: #fff; hei ght:39px;}
+.block_login .block						{ .loginform }

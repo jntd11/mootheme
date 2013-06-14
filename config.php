@@ -118,8 +118,8 @@ $THEME->layouts = array(
     ),
     'frontpage' => array(
         'file' => 'frontpage.php',
-        'regions' => array(''),
-        'defaultregion' => '',
+        'regions' => array('side-post'),
+        'defaultregion' => 'side-post',
     ),
     'admin' => array(
         'file' => 'general.php',
@@ -138,7 +138,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-post',
     ),
     'login' => array(
-        'file' => 'general.php',
+        'file' => 'frontapage.php',
         'regions' => array(),
         'options' => array('langmenu'=>true),
     ),

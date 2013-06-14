@@ -65,7 +65,9 @@ echo $OUTPUT->doctype() ?>
 	                    <?php } ?>
 	                  </div>
 				        <div class="loginForm">
+				        	
 			            	<div class="leftElement">
+			            			<?php echo $OUTPUT->blocks_for_region('side-post') ?>
 			                		<label>User</label><br />
 			                		<input type="text" /><br />
 			            		<label>Password</label><br />
@@ -145,7 +147,7 @@ echo $OUTPUT->doctype() ?>
                         <?php if ($hassidepost) { ?>
                         <div id="region-post" class="block-region">
                             <div class="region-content">
-                                <?php echo $OUTPUT->blocks_for_region('side-post') ?>
+                                <?php //echo $OUTPUT->blocks_for_region('side-post') ?>
                             </div>
                         </div>
                         <?php } ?>
