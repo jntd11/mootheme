@@ -45,17 +45,16 @@ echo $OUTPUT->doctype() ?>
 <div id="custommenu"><?php echo $custommenu; ?></div>
 <?php } ?>
 
-<div id="page" class="container">
+<div id="page">
 
-    <!--  div id="wrapper" class="clearfix" -->
+    <div id="wrapper" class="clearfix">
 
 <!-- START OF HEADER -->
 
-<!-- Jai start 
         <div id="page-header" >
             <div id="page-header-wrapper" class="wrapper clearfix">
--- Jai End-->
-                <div id="header-left" class="header" id="page-header" >
+
+                <div id="header-left" class="header">
 	                <div class="leftElement">
 	                    <?php if (!empty($PAGE->theme->settings->logo)) { ?>
 	                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>" alt="Logo" /></a>
@@ -75,17 +74,16 @@ echo $OUTPUT->doctype() ?>
 			                	<input type="submit" value=""/>
 			                </div>
 			            </div>
-			    </div>
-<!-- Jai start			            
-            </div>
-          Jai end -->
-                <div class="clearWidth nav">
+                </div>
+                <div class="headermenu clearWidth nav">
                     <?php
                         echo $OUTPUT->login_info();
                         echo $OUTPUT->lang_menu();
                         echo $PAGE->headingmenu;
                     ?>
                 </div>
+
+            </div>
                             <!--  Slidder -->
 			   <div id="sliderFrame">
 					<div id="slider">
@@ -94,50 +92,22 @@ echo $OUTPUT->doctype() ?>
 			            <img src="<?php echo $OUTPUT->pix_url('image-slider-3','theme'); ?>" alt="" />
 			            <img src="<?php echo $OUTPUT->pix_url('image-slider-4','theme'); ?>" alt="" />
 			          </div>
-						<div id="htmlcaption" style="display: none;">
-				            <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
-				        </div>
 				</div>
-				<!-- Jai start			
         </div>
-          Jai End
-        -->
-  
+		
 <!-- END OF HEADER -->
-		 <div class="clearWidth bgColor">
-        	<img src="<?php echo $OUTPUT->pix_url('bg','theme'); ?>" class="MRGCenter clearTabel" />
-        </div>
-        
+
 <!-- START OF CONTENT -->
 
-        <div id="page-content-wrapper" class="wrapper clearWidth">
-            <div id="page-content" >
+        <div id="page-content-wrapper" class="wrapper clearfix">
+            <div id="page-content">
                 <div id="region-main-box">
-                    <div id="region-post-box" >
+                    <div id="region-post-box">
+
                         <div id="region-main-wrap">
                             <div id="region-main">
-                                <div class="leftElement MRGR15PX WDTH440PX">
-									            	<img src="images/ladyimg.jpg" class="leftElement MRGR15PX"/>
-									                <p class="WDTH264PX clearTabel info">
-									                	Lorem ipsum dolor sit amet, nec numquam perpetua eu, mel ne cetero imperdiet voluptatum, deleniti interesset sed no. Quo in nostro adipiscing, per lucilius delicata ne. Ignota primis ad has, cum ea eius liberavisse, ad mel regione saperet percipit. Meis constituto ex pri. Vis fugit pericula eu, alii accusata appellantur vix et.
-									                </p>
-													<p class="WDTH264PX clearTabel info">Lorem ipsum dolor sit amet, nec numquam perpetua eu, mel ne cetero imperdiet voluptatum, deleniti interesset sed no. Quo in nostro adipiscing, per lucilius delicata ne. Ignota primis ad has, cum ea eius liberavisse, ad mel regione saperet percipit. Meis constituto ex pri. 
-									                </p>                                
-                                    <?php echo $OUTPUT->main_content(); ?>
-                                </div>
-                                <div class="leftElement list PDDT10PX">
-						            	<ul class="MRGL30PX">
-						                	<li>Improving of YOUR grades
-						                    	<span class="clearTabel tagLine">Complete your school with a high achievement</span>
-						                    </li>
-						                	<li>Computer access 24 hours everyday
-						                    	<span class="clearTabel tagLine">Study anywhere on campus or at home or from any location</span>
-						                    </li>
-						                	<li>Support available
-						                    	<span class="clearTabel tagLine">Contact your teachers and receive tuition</span>
-						                    </li>
-						                </ul>
-                                	<?php //echo $OUTPUT->header(); ?>
+                                <div class="region-content">
+                                    <?php echo $OUTPUT->main_content() ?>
                                 </div>
                             </div>
                         </div>
@@ -153,18 +123,14 @@ echo $OUTPUT->doctype() ?>
                     </div>
                 </div>
             </div>
-            
-        <!--  /div-->
+        </div>
 
 <!-- END OF CONTENT -->
 
     </div> <!-- END #wrapper -->
-               <div class="clearWidth bgColor">
-               		<img src="<?php echo $OUTPUT->pix_url('bg','theme'); ?>" class="MRGCenter clearTabel" />
-        	   </div>
-</div> <!-- END #page -->
+
 <!-- START OF FOOTER -->
-    <div id="page-footer" class="wrapper clearfix footer">
+    <div id="page-footer" class="wrapper clearfix">
            <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
         <?php
                echo $OUTPUT->login_info();
@@ -175,6 +141,7 @@ echo $OUTPUT->doctype() ?>
 
 <!-- END OF FOOTER -->
 
+</div> <!-- END #page -->
 
 <?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
