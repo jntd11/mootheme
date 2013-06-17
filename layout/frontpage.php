@@ -66,16 +66,16 @@ echo $OUTPUT->doctype() ?>
 	                  </div>
 				        <div class="loginForm">
 				        	
-			            	<div class="leftElement">
+			            	<!--  div class="leftElement"-->
 			            			<?php echo $OUTPUT->blocks_for_region('side-post') ?>
-			                		<label>User</label><br />
+			                		<!--  label>User</label><br />
 			                		<input type="text" /><br />
 			            		<label>Password</label><br />
-			                	<input type="text" />
-			                </div>
+			                	<input type="text" /-->
+			                <!--/div>
 			                <div class="rightElement">
-			                	<input type="submit" value=""/>
-			                </div>
+			                	<!--  input type="submit" value="" />
+			                </div-->
 			            </div>
 			    </div>
 <!-- Jai start			            
@@ -112,14 +112,14 @@ echo $OUTPUT->doctype() ?>
         
 <!-- START OF CONTENT -->
 
-        <div id="page-content-wrapper" class="wrapper clearWidth">
+        <div id="page-content-wrapper" >
             <div id="page-content" >
                 <div id="region-main-box">
                     <div id="region-post-box" >
                         <div id="region-main-wrap">
-                            <div id="region-main">
+                            <div id="region-main" class="wrapper clearWidth">
                                 <div class="leftElement MRGR15PX WDTH440PX">
-									            	<img src="images/ladyimg.jpg" class="leftElement MRGR15PX"/>
+									            	<img src="<?php echo $OUTPUT->pix_url('ladyimg','theme'); ?>" class="leftElement MRGR15PX"/>
 									                <p class="WDTH264PX clearTabel info">
 									                	Lorem ipsum dolor sit amet, nec numquam perpetua eu, mel ne cetero imperdiet voluptatum, deleniti interesset sed no. Quo in nostro adipiscing, per lucilius delicata ne. Ignota primis ad has, cum ea eius liberavisse, ad mel regione saperet percipit. Meis constituto ex pri. Vis fugit pericula eu, alii accusata appellantur vix et.
 									                </p>
@@ -166,7 +166,7 @@ echo $OUTPUT->doctype() ?>
         	   </div>
 </div> <!-- END #page -->
 <!-- START OF FOOTER -->
-    <div id="page-footer" class="wrapper clearfix footer">
+    <div id="page-footer" class="wrapper clearfix page-footer">
            <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
         <?php
                echo $OUTPUT->login_info();
