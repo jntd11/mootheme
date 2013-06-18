@@ -138,7 +138,7 @@ $THEME->layouts = array(
         'defaultregion' => 'side-post',
     ),
     'login' => array(
-        'file' => 'frontapage.php',
+        'file' => 'general.php',
         'regions' => array(),
         'options' => array('langmenu'=>true),
     ),

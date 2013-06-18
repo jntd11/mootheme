@@ -83,10 +83,27 @@ echo $OUTPUT->doctype() ?>
           Jai end -->
                 <div class="clearWidth nav">
                     <?php
-                        echo $OUTPUT->login_info();
+                        //echo $OUTPUT->login_info();
                         echo $OUTPUT->lang_menu();
-                        echo $PAGE->headingmenu;
+                        //echo $PAGE->headingmenu;
                     ?>
+           <ul class="sf-menu" id="example">
+                <li><a href="index.php" title="Home"><?php echo get_string("home",'theme_fuji'); ?></a></li>
+                <li>
+                	<a href="javascript:;" title="Mission" id="menu_webapp"><?php echo get_string("mission",'theme_fuji'); ?></a>
+                    <ul>
+                        <li><a href="#" class="menu" title="HTML 5" id="menu_tri_jsf">HTML 5</a></li>
+                        <li><a href="#" class="menu" title="JSP" id="menu_tri_jsp">JavaServer Pages</a></li>
+                        <li><a href="#" class="menu" title="JSF" id="menu_tri_jsf">JavaServer Faces</a></li>
+                        <li class="roundCorner"><a href="#" class="menu BRDNone" title="JSTL" id="menu_tri_jstl">JSTL</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;" title="Departments"><?php echo get_string("departments",'theme_fuji'); ?></a></li>
+                <li><a href="javascript:;" title="Staff"><?php echo get_string("staff",'theme_fuji'); ?></a></li>
+                <li><a href="javascript:;" title="Contact" ><?php echo get_string("contact",'theme_fuji'); ?></a></li>
+                <li><a href="javascript:;" title="Help" ><?php echo get_string("help",'theme_fuji'); ?></a></li>
+            </ul>          
+                    
                 </div>
                             <!--  Slidder -->
 			   <div id="sliderFrame">
@@ -166,12 +183,19 @@ echo $OUTPUT->doctype() ?>
         	   </div>
 </div> <!-- END #page -->
 <!-- START OF FOOTER -->
-    <div id="page-footer" class="wrapper clearfix page-footer">
+    <div id="page-footer" class="page-footer">
+    	<ul>
+        	<li><a href="index.php" title="Home"><?php echo get_string("home",'theme_fuji'); ?></a>|</li>
+        	<li><a href="javascript:;" title="Mission"><?php echo get_string("mission",'theme_fuji'); ?></a>|</li>
+        	<li><a href="javascript:;" title="Departments"><?php echo get_string("departments",'theme_fuji'); ?></a>|</li>
+        	<li><a href="javascript:;" title="Staff"><?php echo get_string("staff",'theme_fuji'); ?></a>|</li>
+        	<li><a href="javascript:;" title="Contact"><?php echo get_string("contact",'theme_fuji'); ?></a></li>
+        </ul>
            <p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')) ?></p>
         <?php
                echo $OUTPUT->login_info();
                echo $OUTPUT->home_link();
-            echo $OUTPUT->standard_footer_html();
+            	echo $OUTPUT->standard_footer_html();
            ?>
        </div>
 

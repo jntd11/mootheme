@@ -4,14 +4,14 @@ body								{ margin:0; padding:0; background: url(fuji/pix/pattern.jpg) repeat;
 #page								{overflow: hidden; width:940px;}
 p									{ font: 12px "Segoe UI"; padding:0; margin:0;}
 ul, li								{ list-style: none; padding:0; margin:0; }
-/* jai 
-input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height:10px}*/
+/* jai */
+input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height:10px}
 
 
 /* Global classes */
 .leftElement						{ float:left; }
 .rightElement						{ float:right; }
-.page-footer								{ margin: 0 auto; display:table; background-color:#fff;width:940px;padding-bottom:20px }
+.page-footer						{ margin: 0 auto; display:table; background-color:#fff;width:940px;padding-bottom:20px }
 .wrapper							{ background-color:#6c60a0; }
 .container							{ width:940px; margin: 0 auto; }
 /* Re-use Classes */
@@ -62,3 +62,6 @@ ul.sf-menu li.active              	{ 	background: #b81e25; font-weight: bold; fl
 .sf-menu li.sfHover 				{	background: url(fuji/pix/menuhoverb.png) repeat-x; color: #fff; hei ght:39px;}
 .block_login .block					{ .loginform  }
 .footer1								{ margin: 0px;}
+
+.loginform input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height:10px}
+.loginform input[type="password"]					{ border:1px solid #8877cc; padding:3px; margin:0; height:10px}
