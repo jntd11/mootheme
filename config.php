@@ -118,7 +118,7 @@ $THEME->layouts = array(
     ),
     'frontpage' => array(
         'file' => 'frontpage.php',
-        'regions' => array('side-post'),
+        'regions' => array('side-post','side-pre'),
         'defaultregion' => 'side-post',
     ),
     'admin' => array(

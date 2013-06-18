@@ -58,7 +58,7 @@ echo $OUTPUT->doctype() ?>
                 <div id="header-left" class="header" id="page-header" >
 	                <div class="leftElement">
 	                    <?php if (!empty($PAGE->theme->settings->logo)) { ?>
-	                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>" alt="Logo" /></a>
+	                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>a" alt="Logo" /></a>
 	                    <?php } else { ?>
 	                        <h1 class="headermain"><a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a></h1>
 	                        <div class="tagline"><?php echo $tagline; ?></div>
@@ -144,7 +144,8 @@ echo $OUTPUT->doctype() ?>
 									                </p>                                
                                     <?php echo $OUTPUT->main_content(); ?>
                                 </div>
-                                <div class="leftElement list PDDT10PX">
+                                <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
+                                <!--  div class="leftElement list PDDT10PX">
 						            	<ul class="MRGL30PX">
 						                	<li>Improving of YOUR grades
 						                    	<span class="clearTabel tagLine">Complete your school with a high achievement</span>
@@ -157,7 +158,7 @@ echo $OUTPUT->doctype() ?>
 						                    </li>
 						                </ul>
                                 	<?php //echo $OUTPUT->header(); ?>
-                                </div>
+                                </div-->
                             </div>
                         </div>
 
