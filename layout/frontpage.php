@@ -58,7 +58,7 @@ echo $OUTPUT->doctype() ?>
                 <div id="header-left" class="header" id="page-header" >
 	                <div class="leftElement">
 	                    <?php if (!empty($PAGE->theme->settings->logo)) { ?>
-	                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>a" alt="Logo" /></a>
+	                        <a href="<?php echo $CFG->wwwroot; ?>" title="Home"><img id="logo" src="<?php echo $logourl; ?>" alt="Logo" /></a>
 	                    <?php } else { ?>
 	                        <h1 class="headermain"><a href="<?php echo $CFG->wwwroot; ?>" title="Home"><?php echo $PAGE->heading ?></a></h1>
 	                        <div class="tagline"><?php echo $tagline; ?></div>
@@ -137,11 +137,11 @@ echo $OUTPUT->doctype() ?>
                             <div id="region-main" class="wrapper clearWidth">
                                 <div class="leftElement MRGR15PX WDTH440PX">
 									            	<img src="<?php echo $OUTPUT->pix_url('ladyimg','theme'); ?>" class="leftElement MRGR15PX"/>
-									                <p class="WDTH264PX clearTabel info">
+									                <!--  p class="WDTH264PX clearTabel info">
 									                	Lorem ipsum dolor sit amet, nec numquam perpetua eu, mel ne cetero imperdiet voluptatum, deleniti interesset sed no. Quo in nostro adipiscing, per lucilius delicata ne. Ignota primis ad has, cum ea eius liberavisse, ad mel regione saperet percipit. Meis constituto ex pri. Vis fugit pericula eu, alii accusata appellantur vix et.
 									                </p>
 													<p class="WDTH264PX clearTabel info">Lorem ipsum dolor sit amet, nec numquam perpetua eu, mel ne cetero imperdiet voluptatum, deleniti interesset sed no. Quo in nostro adipiscing, per lucilius delicata ne. Ignota primis ad has, cum ea eius liberavisse, ad mel regione saperet percipit. Meis constituto ex pri. 
-									                </p>                                
+									                </p-->                                
                                     <?php echo $OUTPUT->main_content(); ?>
                                 </div>
                                 <?php echo $OUTPUT->blocks_for_region('side-pre') ?>
