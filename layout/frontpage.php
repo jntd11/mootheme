@@ -82,11 +82,6 @@ echo $OUTPUT->doctype() ?>
             </div>
           Jai end -->
                 <div class="clearWidth nav">
-                    <?php
-                        //echo $OUTPUT->login_info();
-                        echo $OUTPUT->lang_menu();
-                        //echo $PAGE->headingmenu;
-                    ?>
            <ul class="sf-menu" id="example">
                 <li><a href="index.php" title="Home"><?php echo get_string("home",'theme_fuji'); ?></a></li>
                 <li>
@@ -103,7 +98,14 @@ echo $OUTPUT->doctype() ?>
                 <li><a href="javascript:;" title="Contact" ><?php echo get_string("contact",'theme_fuji'); ?></a></li>
                 <li><a href="javascript:;" title="Help" ><?php echo get_string("help",'theme_fuji'); ?></a></li>
             </ul>          
-                    
+					<div class="langMenu">
+					<?php
+                        //echo $OUTPUT->login_info();
+                        echo $OUTPUT->lang_menu();
+                        //echo $PAGE->headingmenu;
+                    ?>
+					</div>
+
                 </div>
                             <!--  Slidder -->
 			   <div id="sliderFrame">

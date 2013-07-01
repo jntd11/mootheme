@@ -68,3 +68,4 @@ ul.sf-menu li.active              	{ 	background: #b81e25; font-weight: bold; fl
 .loginform input[type="text"]		{ border:1px solid #8877cc; padding:1px; margin:0; height:10px}
 .loginform input[type="password"]	{ border:1px solid #8877cc; padding:2px; margin:0; height:10px}
 .test {width: 12%}
+.langMenu							{float: right; margin-right: 21%;}
