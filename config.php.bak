@@ -38,9 +38,9 @@ $THEME->name = 'fuji';
 
 
 $THEME->parents = array(
-    'canvas',
-    'base',
-	//'Afterburner'
+    //'canvas',
+    //'base',
+	'Afterburner'
 );
 
 /////////////////////////////////////////////////////
