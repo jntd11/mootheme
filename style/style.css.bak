@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
-body								{ margin:0; padding:0; background: url(pattern.jpg) repeat;}
-#page								{overflow: hidden; width:940px;}
+body								{ margin:0; padding:0; background: url(fuji/pix/pattern.jpg) repeat;}
+#page-front								{overflow: hidden; width:940px;}
 p									{ font: 12px "Segoe UI"; padding:0; margin:0;}
 ul, li								{ list-style: none; padding:0; margin:0; }
 /* jai */
@@ -11,7 +11,8 @@ input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height
 /* Global classes */
 .leftElement						{ float:left; }
 .rightElement						{ float:right; }
-.page-footer						{ margin: 0 auto; display:table; background-color:#fff;width:940px;padding-bottom:20px }
+#page-footer						{float: none;}
+.page-footer						{ margin: 0 auto; display:table; background-color:#fff; width:940px;padding-bottom:20px }
 .wrapper							{ background-color:#6c60a0; }
 .container							{ width:940px; margin: 0 auto; }
 /* Re-use Classes */
@@ -19,7 +20,7 @@ input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height
 .clearTabel							{ display:table; }
 .clearWidth							{ display:table; width:100%; }
 .WDTH264PX							{ width: 264px; }
-.MRGR15PX							{ margin-right:15px;}
+.MRGR15PX							{ margin-right:13px;}
 .MRGL30PX							{ margin-left:30px; }
 .PDDT10PX							{ padding-top:10px; }
 .WDTH440PX							{ width:440px; }
@@ -35,9 +36,9 @@ input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height
 .block_html ul li, .block .leftElement li  { font: bold 22px "Segoe UI"; color:#fff; list-style:url(fuji/pix/bullet.png); padding-bottom:25px; }
 .list ul li span, .block_html ul li span
 									{ font:bold 15px "Segoe UI"; color:#413962; }
-.page-footer ul li					{ float:left; padding-right:10px}
-.page-footer ul li a				{ font:18px "Segoe UI"; color:#8877cc; margin-right:10px; text-decoration: none; text-align:center;}
-.page-footer ul						{ display:table; margin:0 auto;}
+#page-footer ul li, .page-footer ul li					{ float:left; padding-right:10px}
+#page-footer ul li a, .page-footer ul li a				{ font:18px "Segoe UI"; color:#8877cc; margin-right:10px; text-decoration: none; text-align:center;}
+#page-footer ul, .page-footer ul						{ display:table; margin:0 auto;}
 .bgColor							{ background-color:#fff; }
 
 /* Menu classes */
