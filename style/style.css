@@ -1,11 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-body								{ margin:0; padding:0; background: url(fuji/pix/pattern.jpg) repeat;}
+body								{ margin:0; padding:0; background: url(pattern.jpg) repeat;}
 #page								{overflow: hidden; width:940px;}
 p									{ font: 12px "Segoe UI"; padding:0; margin:0;}
 ul, li								{ list-style: none; padding:0; margin:0; }
 /* jai */
-input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height:10px}
+input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height:10px; font-size: 10px;}
 
 
 /* Global classes */
@@ -19,23 +19,25 @@ input[type="text"]					{ border:1px solid #8877cc; padding:3px; margin:0; height
 .clearTabel							{ display:table; }
 .clearWidth							{ display:table; width:100%; }
 .WDTH264PX							{ width: 264px; }
-.MRGR15PX							{ margin-right:15px; }
+.MRGR15PX							{ margin-right:13px;}
 .MRGL30PX							{ margin-left:30px; }
 .PDDT10PX							{ padding-top:10px; }
 .WDTH440PX							{ width:440px; }
 
 /*Pages classes*/
 .header								{ background:#fff; display:table; width:100%; }
-.loginForm							{ float:right; display:table; font:14px "Segoe UI"; color:#8877cc; margin:1px 3px 0 0;}
-.loginForm input[type="submit"]		{ background:url(fuji/pix/loginBtn.jpg) no-repeat; border:0; width:57px; height:47px; margin:23px 0 0 10px;}
+.loginForm							{ float:right; display:table; font:14px "Segoe UI"; color:#8877cc; margin:12px 15px 0 0;}
+/*.loginForm						{ float:right; display:table; font:14px "Segoe UI"; color:#8877cc; margin:1px 3px 0 0;}*/
+/*.loginForm input[type="submit"]	{ background:url(fuji/pix/loginBtn.jpg) no-repeat; border:0; width:57px; height:47px; margin:180 0 3px;}*/
+.loginForm input[type="submit"]		{ background:url(fuji/pix/loginBtn.jpg) no-repeat; border:0; width:79px; height:65px; margin:17px 0 0 -10px; color: white;}
 .info								{ color:#fff; text-align:justify; margin-le ft:10px; padding-top:10px}
 .list ul li							{ font: bold 22px "Segoe UI"; color:#fff; list-style:url(fuji/pix/bullet.png); padding-bottom:25px; }
 .block_html ul li, .block .leftElement li  { font: bold 22px "Segoe UI"; color:#fff; list-style:url(fuji/pix/bullet.png); padding-bottom:25px; }
 .list ul li span, .block_html ul li span
 									{ font:bold 15px "Segoe UI"; color:#413962; }
-.page-footer ul li						{ float:left; padding-right:10px}
-.page-footer ul li a						{ font:18px "Segoe UI"; color:#8877cc; margin-right:10px; text-decoration: none; text-align:center;}
-.page-footer ul							{ display:table; margin:0 auto;}
+.page-footer ul li					{ float:left; padding-right:10px}
+.page-footer ul li a				{ font:18px "Segoe UI"; color:#8877cc; margin-right:10px; text-decoration: none; text-align:center;}
+.page-footer ul						{ display:table; margin:0 auto;}
 .bgColor							{ background-color:#fff; }
 
 /* Menu classes */
@@ -65,7 +67,21 @@ ul.sf-menu li.active              	{ 	background: #b81e25; font-weight: bold; fl
 .block_login .block					{ .loginform  }
 .footer1								{ margin: 0px;}
 
-.loginform input[type="text"]		{ border:1px solid #8877cc; padding:1px; margin:0; height:10px}
-.loginform input[type="password"]	{ border:1px solid #8877cc; padding:2px; margin:0; height:10px}
-.test {width: 12%}
-.langMenu							{float: right; margin-right: 21%;}
+.loginform input[type="text"]		{ border:1px solid #8877cc; padding:0px; margin:0; height:10px; font-size: 9px;}
+.loginform input[type="password"]	{ border:1px solid #8877cc; padding:0px; margin:0; height:10px; font-size: 9px;}
+#login_password { border:1px solid #8877cc; padding:0px; margin:0; height:10px; font-size: 10px;}
+/*.test 								{width: 12%}*/
+.langMenu							{margin-right: 150px; float: right; }
+@-moz-document url-prefix() {
+	.langMenu							{float: right; margin-right: 17%;}
+}
+
+.loginForm a{
+	color: black;
+}
+.loginForm a:hover{
+	text-decoration: underline;
+}
+.block_login .content{
+	padding: 0px;
+}
